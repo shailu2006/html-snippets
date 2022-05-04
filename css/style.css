@@ -1,6 +1,7 @@
 /* Variable declarations */
 :root {
   --side-bar-menu-width: 150px;
+  --top-menu-height: 50px;
 }
 
 * {
@@ -15,6 +16,7 @@ nav {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  height: var(--top-menu-height);
   padding-left: var(--side-bar-menu-width);
 }
 
@@ -62,3 +64,35 @@ a {
 }
 
 /* Create side bar end */
+
+/* Section CSS start */
+section {
+  padding-left: calc(var(--side-bar-menu-width) + 10px);
+  padding-top: calc(var(--top-menu-height) + 10px);
+}
+
+/* Two column layout start */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Two column layout end */
+
+/* Section CSS end*/
+
+/* Rounded Button start */
+.rounded-button {
+  color: red;
+  background-color: aqua;
+  text-decoration: none;
+  border-radius: 25px; /*Creates the rounded corner*/
+  margin: 5px;
+}
+/* Rounded Button end */
