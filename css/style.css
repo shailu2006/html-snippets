@@ -100,6 +100,7 @@ section {
 /* Check source code start */
 .check-source-code {
   margin: 10px;
+  clear: both;
 }
 /* Check source code end */
 
@@ -243,3 +244,37 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 /* toggle Button end */
+
+/* Multilayered buttons start */
+.multilayered-button {
+  border: 5px solid aqua;
+  color: red;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  position: relative;
+}
+
+.multilayered-button::before {
+  content: "";
+  background-color: antiquewhite;
+  box-shadow: 10px 10px 0 burlywood, 20px 20px 0 darkgoldenrod;
+  position: absolute;
+  left: 0.25rem;
+  top: 0.5rem;
+  height: 108%;
+  width: 108%;
+  z-index: -1;
+  transform: all 0.1s ease;
+}
+
+.multilayered-button:hover:before {
+  box-shadow: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Multilayered buttons end */
