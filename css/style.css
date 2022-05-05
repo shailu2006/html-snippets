@@ -127,3 +127,14 @@ section {
   transform: skew(20deg);
 }
 /* Parallelogram button end */
+
+/* Hover button effect start */
+.hover-button {
+  border-radius: 25px;
+}
+
+.hover-button:hover {
+  background-color: red;
+  color: aqua;
+}
+/* Hover button effect end */
