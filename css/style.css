@@ -278,3 +278,13 @@ input:checked + .slider:before {
 }
 
 /* Multilayered buttons end */
+
+/* Gradient Button start */
+.gradient-button {
+  color: black;
+  text-decoration: none;
+  border-radius: 50px 50px 30px 30px;
+  background: linear-gradient(315deg, chocolate 0%, darksalmon 74%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+/* Gradient Button end */
