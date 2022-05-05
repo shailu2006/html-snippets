@@ -96,3 +96,12 @@ section {
   margin: 5px;
 }
 /* Rounded Button end */
+
+/* Rectagular Button start */
+.rectangular-button {
+  color: red;
+  background-color: aqua;
+  text-decoration: none;
+  margin: 5px;
+}
+/* Rectagular Button end */
