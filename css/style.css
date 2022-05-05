@@ -2,6 +2,7 @@
 :root {
   --side-bar-menu-width: 150px;
   --top-menu-height: 50px;
+  --base-color: #333;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--base-color);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -288,3 +289,30 @@ input:checked + .slider:before {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 /* Gradient Button end */
+
+/* Footer Snippets start */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--base-color);
+  color: white;
+  text-align: right;
+  padding: 10px;
+  padding-right: 30px;
+  height: 50px;
+}
+/* Footer Snippets end */
+
+.notify {
+  position: fixed;
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: burlywood;
+  border-radius: 25px;
+  bottom: -0;
+  right: 0;
+  z-index: 1000;
+}
