@@ -85,23 +85,43 @@ section {
 }
 /* Two column layout end */
 
+/*Common button class */
+.btn {
+  color: red;
+  background-color: aqua;
+  text-decoration: none;
+  margin: 5px;
+}
+
 /* Section CSS end*/
 
 /* Rounded Button start */
 .rounded-button {
-  color: red;
-  background-color: aqua;
-  text-decoration: none;
   border-radius: 25px; /*Creates the rounded corner*/
-  margin: 5px;
 }
 /* Rounded Button end */
 
 /* Rectagular Button start */
 .rectangular-button {
-  color: red;
-  background-color: aqua;
-  text-decoration: none;
-  margin: 5px;
 }
 /* Rectagular Button end */
+
+/* Parallelogram button start */
+.parallelogram-button {
+  transform: skew(20deg);
+}
+.skew-fix {
+  display: inline-block;
+  transform: skew(-20deg);
+}
+/* Parallelogram button end */
+
+/* Parallelogram button start */
+.parallelogram-button1 {
+  transform: skew(-20deg);
+}
+.skew-fix1 {
+  display: inline-block;
+  transform: skew(20deg);
+}
+/* Parallelogram button end */

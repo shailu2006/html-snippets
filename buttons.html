@@ -19,7 +19,7 @@
       <div class="row">
         <div class="column">
           <h1>Rounded Button</h1>
-          <a href="#" class="rounded-button">Rounded Button</a>
+          <a href="#" class="btn rounded-button">Rounded Button</a>
           <br />
           <br /><br />
           <pre class="prettyprint lang-html">
@@ -37,7 +37,7 @@
         </div>
         <div class="column">
           <h1>Rectangular Button</h1>
-          <a href="#" class="rectangular-button">Rectangular Button</a>
+          <a href="#" class="btn rectangular-button">Rectangular Button</a>
           <br />
           <br /><br />
           <pre class="prettyprint lang-html">
@@ -49,6 +49,50 @@
               background-color: aqua;
               text-decoration: none;
               margin: 5px;
+            }
+          </pre>
+        </div>
+        <div class="column">
+          <h1>Parallelogram Button</h1>
+          <a href="#" class="btn parallelogram-button">
+            <span class="skew-fix">Parallelogram Button</span>
+          </a>
+          <br />
+          <br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;btn parallelogram-button&quot;&gt;
+  &lt;span class=&quot;skew-fix&quot;&gt;Parallelogram Button&lt;/span&gt;
+&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .parallelogram-button {
+              transform: skew(20deg);
+            }
+            .skew-fix {
+              display: inline-block;
+              transform: skew(-20deg);
+            }
+          </pre>
+        </div>
+        <div class="column">
+          <h1>Parallelogram Button</h1>
+          <a href="#" class="btn parallelogram-button1">
+            <span class="skew-fix1">Parallelogram Button</span>
+          </a>
+          <br />
+          <br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;btn parallelogram-button1&quot;&gt;
+  &lt;span class=&quot;skew-fix1&quot;&gt;Parallelogram Button&lt;/span&gt;
+&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .parallelogram-button1 {
+              transform: skew(-20deg);
+            }
+            .skew-fix1 {
+              display: inline-block;
+              transform: skew(20deg);
             }
           </pre>
         </div>
