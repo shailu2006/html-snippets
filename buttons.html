@@ -96,7 +96,7 @@
             }
           </pre>
         </div>
-        <div class="column">
+        <div class="column wiggle-height">
           <h1>Hover Button</h1>
           <a href="#" class="btn hover-button">Hover Button</a>
           <br />
@@ -114,6 +114,50 @@
               color: aqua;
             }
           </pre>
+        </div>
+        <div class="column wiggle-height">
+          <h1>Wiggle Button</h1>
+          <a href="#" class="btn wiggle-button">Wiggle Button</a>
+          <br />
+          <br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;btn wiggle-button&quot;&gt;Wiggle Button&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .wiggle-button {
+              border-radius: 25px;
+              animation: wiggle 2s linear infinite;
+            }
+            
+            @keyframes wiggle {
+              0%,
+              7% {
+                transform: rotateZ(0);
+              }
+              15% {
+                transform: rotateZ(-15deg);
+              }
+              20% {
+                transform: rotateZ(10deg);
+              }
+              25% {
+                transform: rotateZ(-10deg);
+              }
+              30% {
+                transform: rotateZ(6deg);
+              }
+              35% {
+                transform: rotateZ(-4deg);
+              }
+              40%,
+              100% {
+                transform: rotateZ(0);
+              }
+            }
+          </pre>
+        </div>
+        <div class="column">
+          <h1>Hover Button</h1>
         </div>
       </div>
     </section>

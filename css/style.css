@@ -76,7 +76,7 @@ section {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 450px;
+  height: 480px;
 }
 
 /* Clear floats after the columns */
@@ -138,3 +138,41 @@ section {
   color: aqua;
 }
 /* Hover button effect end */
+
+/* Wiggle Button start */
+.wiggle-height {
+  height: 800px;
+}
+
+.wiggle-button {
+  border-radius: 25px;
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+/* Wiggle Button end */
