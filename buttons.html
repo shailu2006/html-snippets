@@ -96,6 +96,107 @@
             }
           </pre>
         </div>
+        <div class="column wiggle-height">
+          <h1>Hover Button</h1>
+          <a href="#" class="btn hover-button">Hover Button</a>
+          <br />
+          <br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;btn hover-button&quot;&gt;Hover Button&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .hover-button {
+              border-radius: 25px;
+            }
+            
+            .hover-button:hover {
+              background-color: red;
+              color: aqua;
+            }
+          </pre>
+        </div>
+        <div class="column wiggle-height">
+          <h1>Wiggle Button</h1>
+          <a href="#" class="btn wiggle-button">Wiggle Button</a>
+          <br />
+          <br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;btn wiggle-button&quot;&gt;Wiggle Button&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .wiggle-button {
+              border-radius: 25px;
+              animation: wiggle 2s linear infinite;
+            }
+            
+            @keyframes wiggle {
+              0%,
+              7% {
+                transform: rotateZ(0);
+              }
+              15% {
+                transform: rotateZ(-15deg);
+              }
+              20% {
+                transform: rotateZ(10deg);
+              }
+              25% {
+                transform: rotateZ(-10deg);
+              }
+              30% {
+                transform: rotateZ(6deg);
+              }
+              35% {
+                transform: rotateZ(-4deg);
+              }
+              40%,
+              100% {
+                transform: rotateZ(0);
+              }
+            }
+          </pre>
+        </div>
+        <div class="column">
+          <h1>Toggle Button</h1>
+          <br />
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <div class="check-source-code">Check source code</div>
+        </div>
+        <div class="column">
+          <br /><br />
+          <h1>Multilayered Button</h1>
+          <br />
+          <div class="wrapper">
+            <a href="#" class="multilayered-button">Multilayered Button</a>
+          </div>
+          <br /><br /><br /><br /><br />
+          <div class="check-source-code">Check source code</div>
+        </div>
+        <div class="column">
+          <br /><br />
+          <h1>Gradient Button</h1>
+          <a href="#" class="gradient-button">Gradient Button</a>
+          <br /><br /><br />
+          <pre class="prettyprint lang-html">
+            &lt;a href=&quot;#&quot; class=&quot;gradient-button&quot;&gt;Gradient Button&lt;/a&gt;
+          </pre>
+          <pre class="prettyprint lang-css">
+            .gradient-button {
+              color: black;
+              text-decoration: none;
+              border-radius: 50px 50px 30px 30px;
+              background: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+              box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            }
+          </pre>
+        </div>
       </div>
     </section>
   </body>
